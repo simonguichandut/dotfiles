@@ -1,0 +1,4 @@
+# Not symlinked into $HOME. ~/.zshrc is a per-machine loader that sources
+# this file by path; see README. Keeping it out of stow means installers
+# that append to ~/.zshrc don't touch the tracked config.
+^/\.zshrc$

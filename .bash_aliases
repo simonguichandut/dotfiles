@@ -15,7 +15,7 @@ alias codes='cd ~/codes'
 
 # git
 alias gst='git status'
-alias gfp='git fetch prune'
+alias gfp='git fetch --prune'
 alias glt='git log --oneline --decorate --graph --all'
 
 # docker

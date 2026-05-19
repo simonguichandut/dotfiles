@@ -33,29 +33,3 @@ fi
 if [ -f ~/.bash_functions_local ]; then
     . ~/.bash_functions_local
 fi
-
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-path=('/home/simon/.juliaup/bin' $path)
-export PATH
-
-# <<< juliaup initialize <<<
-
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-
-# Latex installation
-PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
-
-# Prepend QPU name to command line prompt
-# See ~/.bash_aliases
-setopt prompt_subst
-QPU_PROMPT_PREFIX='%K{red}%F{white}%B'
-QPU_PROMPT_SUFFIX='%b%f%k'
-PROMPT='${CALIBRATION_TARGET_NAME:+${QPU_PROMPT_PREFIX}QPU=${CALIBRATION_TARGET_NAME}${QPU_PROMPT_SUFFIX} }'"$PROMPT"
-# QPU env
-[ -f "/home/simon/codes/qcs/calibration/qpu-management/load-aliases.sh" ] && source "/home/simon/codes/qcs/calibration/qpu-management/load-aliases.sh"
