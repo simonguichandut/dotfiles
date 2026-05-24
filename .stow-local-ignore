@@ -2,3 +2,5 @@
 # this file by path; see README. Keeping it out of stow means installers
 # that append to ~/.zshrc don't touch the tracked config.
 ^/\.zshrc$
+
+.git
