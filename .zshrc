@@ -11,10 +11,6 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 export VISUAL=vim
 
-# LS_COLORS
-# https://github.com/trapd00r/LS_COLORS/blob/master/lscolors.sh
-source /home/simon/.local/share/lscolors.sh
-
 # History
 HISTSIZE=100000
 SAVEHIST=50000
