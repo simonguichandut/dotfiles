@@ -1,9 +1,11 @@
-# core
-alias config='vim ~/dotfiles/.zshrc'
-alias vimconfig='vim ~/dotfiles/.vimrc'
-alias aliases='vim ~/dotfiles/.bash_aliases'
+# core edits (chezmoi)
+alias config='vim $CHEZMOI_SOURCE_DIR/dot_zshrc'
+alias vimconfig='vim $CHEZMOI_SOURCE_DIR/dot_vimrc'
+alias aliases='vim $CHEZMOI_SOURCE_DIR/dot_bash_aliases'
+alias functions='vim $CHEZMOI_SOURCE_DIR/dot_bash_functions'
+
+# local
 alias local_aliases='vim ~/.bash_aliases_local'
-alias functions='vim ~/dotfiles/.bash_functions'
 alias local_functions='vim ~/.bash_functions_local'
 
 # source
